@@ -33,3 +33,33 @@ Data DictionaryFeatureData TypeDescriptionTransaction IDIntegerUnique identifier
   }
 }
 Analytical Pages & VisualizationsVisualizationDescriptionSales by CategoryA Seaborn bar plot comparing total revenue generated across Electronics, Clothing, and Beauty.Age DistributionA Matplotlib histogram with KDE curve analyzing the age density of the customer base.Statistical SummaryA data frame output describing the count, mean, min, max, and percentiles for all numeric columns.
+# Retail Sales Data Analytics Project
+
+A data analytics project that processes retail sales data to uncover insights into customer purchasing behavior, demographics, and product performance.
+
+**Author:** Abdul Sattar  
+**Program:** AICTE | IBM SkillsBuild Data Analytics Internship
+
+## Project Structure
+* **AbdulSattar_RetailSalesAnalysis.ipynb**: The main Google Colab notebook containing data extraction, cleaning, and visualization code.
+* **retail_sales_dataset.csv**: The raw transaction dataset containing 1,000 records.
+* **README.md**: Project documentation and overview.
+* **requirements.txt**: List of Python dependencies required to run the analysis.
+* **AbdulSattar_ProjectReport.docx**: The final executive summary and business insights report.
+
+## Quickstart (Google Colab)
+1. Upload `retail_sales_dataset.csv` and `AbdulSattar_RetailSalesAnalysis.ipynb` to your Google Drive or Colab session storage.
+2. Open the `.ipynb` file using Google Colab.
+3. Install the required libraries using `!pip install -r requirements.txt`.
+4. Go to the top menu, click **Runtime**, and select **Run all** to execute the data pipeline and generate the visualizations.
+
+## Data Pipeline & Methods
+* **Data Loading:** Extracted from a ZIP archive and loaded into a Pandas DataFrame.
+* **Preprocessing:** Checked for missing values and converted string dates to standard Python Datetime objects.
+* **Aggregation:** Grouped data to calculate total revenue, category-wise sales, and demographic spending patterns.
+* **Visualization:** Generated Seaborn bar plots and Matplotlib histograms to present findings visually.
+
+## Key Insights
+* **Total Revenue:** $456,000 across 1,000 transactions.
+* **Top Performing Category:** Electronics led sales with $156,905.
+* **Customer Demographics:** Spending is evenly distributed, with female customers averaging $456.55 and male customers averaging $455.43 per transaction.
